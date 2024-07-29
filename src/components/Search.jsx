@@ -30,6 +30,21 @@ class Search extends React.Component {
                     />
                     <button className='btn search-btn' onClick={ () => this.props.searchMovies(this.state.search)}>Search</button>
                 </div>
+
+            <div>
+                <label>
+                    <input className="with-gap" name="type" type="radio"/>
+                    <span>All</span>
+                </label>
+                <label>
+                    <input className="with-gap" name="type" type="radio"/>
+                    <span>Movies only</span>
+                </label>
+                <label>
+                    <input className="with-gap" name="type" type="radio"/>
+                    <span>Series only</span>
+                </label>
+            </div>
         </div>
 
     }
